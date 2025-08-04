@@ -1,0 +1,1838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:qual="http://www.sbml.org/sbml/level3/version1/qual/version1" level="3" version="1" qual:required="true">
+  <model id="ClostridiumBooleanNetwork" name="Boolean Network for Clostridium beijerinckii">
+    <listOfCompartments>
+      <compartment id="cell" constant="true"/>
+    </listOfCompartments>
+    <qual:listOfQualitativeSpecies>
+      <qual:qualitativeSpecies id="X276_RS00025" name="X276_RS00025" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS00165" name="X276_RS00165" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS00235" name="X276_RS00235" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS00240" name="X276_RS00240" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS00325" name="X276_RS00325" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS00350" name="X276_RS00350" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS00415" name="X276_RS00415" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS01185" name="X276_RS01185" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS01625" name="X276_RS01625" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS01655" name="X276_RS01655" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS01980" name="X276_RS01980" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS01990" name="X276_RS01990" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS02055" name="X276_RS02055" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS02060" name="X276_RS02060" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS02905" name="X276_RS02905" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS03065" name="X276_RS03065" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS03145" name="X276_RS03145" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS03340" name="X276_RS03340" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS03450" name="X276_RS03450" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS03755" name="X276_RS03755" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS04125" name="X276_RS04125" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS04450" name="X276_RS04450" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS04485" name="X276_RS04485" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS04545" name="X276_RS04545" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS04950" name="X276_RS04950" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS05025" name="X276_RS05025" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS05240" name="X276_RS05240" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS06155" name="X276_RS06155" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS06165" name="X276_RS06165" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS06170" name="X276_RS06170" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS06265" name="X276_RS06265" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS06520" name="X276_RS06520" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS06740" name="X276_RS06740" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS06780" name="X276_RS06780" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS06785" name="X276_RS06785" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS07250" name="X276_RS07250" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS07445" name="X276_RS07445" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS07540" name="X276_RS07540" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS07815" name="X276_RS07815" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS07825" name="X276_RS07825" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS08090" name="X276_RS08090" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS08140" name="X276_RS08140" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS08170" name="X276_RS08170" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS08815" name="X276_RS08815" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS08825" name="X276_RS08825" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS09165" name="X276_RS09165" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS09440" name="X276_RS09440" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS09450" name="X276_RS09450" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS10140" name="X276_RS10140" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS11095" name="X276_RS11095" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS11450" name="X276_RS11450" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS11665" name="X276_RS11665" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS11740" name="X276_RS11740" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS11755" name="X276_RS11755" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12030" name="X276_RS12030" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12045" name="X276_RS12045" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12055" name="X276_RS12055" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12360" name="X276_RS12360" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12385" name="X276_RS12385" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12415" name="X276_RS12415" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12515" name="X276_RS12515" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12545" name="X276_RS12545" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12585" name="X276_RS12585" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12770" name="X276_RS12770" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12845" name="X276_RS12845" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12960" name="X276_RS12960" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12970" name="X276_RS12970" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12975" name="X276_RS12975" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS12980" name="X276_RS12980" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13005" name="X276_RS13005" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13010" name="X276_RS13010" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13015" name="X276_RS13015" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13020" name="X276_RS13020" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13060" name="X276_RS13060" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13110" name="X276_RS13110" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13115" name="X276_RS13115" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13120" name="X276_RS13120" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13145" name="X276_RS13145" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13150" name="X276_RS13150" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13155" name="X276_RS13155" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13160" name="X276_RS13160" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13215" name="X276_RS13215" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13470" name="X276_RS13470" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13480" name="X276_RS13480" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13485" name="X276_RS13485" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13490" name="X276_RS13490" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13500" name="X276_RS13500" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13505" name="X276_RS13505" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13510" name="X276_RS13510" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13515" name="X276_RS13515" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13520" name="X276_RS13520" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13525" name="X276_RS13525" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13530" name="X276_RS13530" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13535" name="X276_RS13535" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13540" name="X276_RS13540" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13545" name="X276_RS13545" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13550" name="X276_RS13550" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13555" name="X276_RS13555" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13560" name="X276_RS13560" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13575" name="X276_RS13575" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13580" name="X276_RS13580" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13585" name="X276_RS13585" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13590" name="X276_RS13590" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13595" name="X276_RS13595" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13640" name="X276_RS13640" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS13660" name="X276_RS13660" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS14755" name="X276_RS14755" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS14910" name="X276_RS14910" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS15475" name="X276_RS15475" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS15500" name="X276_RS15500" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS15950" name="X276_RS15950" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS17070" name="X276_RS17070" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS17535" name="X276_RS17535" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS18205" name="X276_RS18205" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS18375" name="X276_RS18375" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS19565" name="X276_RS19565" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS19830" name="X276_RS19830" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS20515" name="X276_RS20515" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS20965" name="X276_RS20965" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21130" name="X276_RS21130" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21140" name="X276_RS21140" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21160" name="X276_RS21160" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21245" name="X276_RS21245" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21255" name="X276_RS21255" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21260" name="X276_RS21260" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21275" name="X276_RS21275" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21280" name="X276_RS21280" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21290" name="X276_RS21290" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21345" name="X276_RS21345" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21350" name="X276_RS21350" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21355" name="X276_RS21355" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21395" name="X276_RS21395" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21405" name="X276_RS21405" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21450" name="X276_RS21450" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21465" name="X276_RS21465" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21470" name="X276_RS21470" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21475" name="X276_RS21475" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21515" name="X276_RS21515" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21695" name="X276_RS21695" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21700" name="X276_RS21700" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21770" name="X276_RS21770" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21950" name="X276_RS21950" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS21990" name="X276_RS21990" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS22500" name="X276_RS22500" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS23270" name="X276_RS23270" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS23275" name="X276_RS23275" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS24375" name="X276_RS24375" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS24955" name="X276_RS24955" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS24960" name="X276_RS24960" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25135" name="X276_RS25135" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25185" name="X276_RS25185" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25220" name="X276_RS25220" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25235" name="X276_RS25235" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25255" name="X276_RS25255" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25390" name="X276_RS25390" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25640" name="X276_RS25640" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25650" name="X276_RS25650" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25745" name="X276_RS25745" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25825" name="X276_RS25825" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25925" name="X276_RS25925" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25970" name="X276_RS25970" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25975" name="X276_RS25975" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS25980" name="X276_RS25980" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26075" name="X276_RS26075" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26455" name="X276_RS26455" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26475" name="X276_RS26475" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26615" name="X276_RS26615" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26850" name="X276_RS26850" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26860" name="X276_RS26860" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26895" name="X276_RS26895" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26900" name="X276_RS26900" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26905" name="X276_RS26905" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26915" name="X276_RS26915" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26925" name="X276_RS26925" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26935" name="X276_RS26935" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS26975" name="X276_RS26975" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS27065" name="X276_RS27065" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS27170" name="X276_RS27170" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS27295" name="X276_RS27295" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS27330" name="X276_RS27330" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS27430" name="X276_RS27430" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS27530" name="X276_RS27530" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS27595" name="X276_RS27595" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS27685" name="X276_RS27685" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS27825" name="X276_RS27825" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS27870" name="X276_RS27870" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS28305" name="X276_RS28305" compartment="cell" constant="false" maxLevel="1"/>
+      <qual:qualitativeSpecies id="X276_RS28360" name="X276_RS28360" compartment="cell" constant="false" maxLevel="1"/>
+    </qual:listOfQualitativeSpecies>
+    <qual:listOfTransitions>
+      <qual:transition id="tr_X276_RS21140" name="Regulation of X276_RS21140">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS26975_to_X276_RS21140" qualitativeSpecies="X276_RS26975" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21140" qualitativeSpecies="X276_RS21140" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS26975</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS23275" name="Regulation of X276_RS23275">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS26915_to_X276_RS23275" qualitativeSpecies="X276_RS26915" transitionEffect="none" sign="negative"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS23275" qualitativeSpecies="X276_RS23275" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:apply>
+                <math:not/>
+                <math:ci>X276_RS26915</math:ci>
+              </math:apply>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS27430" name="Regulation of X276_RS27430">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS21405_to_X276_RS27430" qualitativeSpecies="X276_RS21405" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS27430" qualitativeSpecies="X276_RS27430" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS21405</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS03340" name="Regulation of X276_RS03340">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25390_to_X276_RS03340" qualitativeSpecies="X276_RS25390" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS03340" qualitativeSpecies="X276_RS03340" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25390</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS26895" name="Regulation of X276_RS26895">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS07445_to_X276_RS26895" qualitativeSpecies="X276_RS07445" transitionEffect="none" sign="negative"/>
+          <qual:input id="input_X276_RS01980_to_X276_RS26895" qualitativeSpecies="X276_RS01980" transitionEffect="none" sign="negative"/>
+          <qual:input id="input_X276_RS09440_to_X276_RS26895" qualitativeSpecies="X276_RS09440" transitionEffect="none" sign="negative"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS26895" qualitativeSpecies="X276_RS26895" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:apply>
+                <math:or/>
+                <math:apply>
+                  <math:and/>
+                  <math:apply>
+                    <math:not/>
+                    <math:ci>X276_RS07445</math:ci>
+                  </math:apply>
+                  <math:apply>
+                    <math:not/>
+                    <math:ci>X276_RS09440</math:ci>
+                  </math:apply>
+                </math:apply>
+                <math:apply>
+                  <math:and/>
+                  <math:ci>X276_RS07445</math:ci>
+                  <math:apply>
+                    <math:not/>
+                    <math:ci>X276_RS01980</math:ci>
+                  </math:apply>
+                </math:apply>
+              </math:apply>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS10140" name="Regulation of X276_RS10140">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS00025_to_X276_RS10140" qualitativeSpecies="X276_RS00025" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS10140" qualitativeSpecies="X276_RS10140" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS00025</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS23270" name="Regulation of X276_RS23270">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS21950_to_X276_RS23270" qualitativeSpecies="X276_RS21950" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS23270" qualitativeSpecies="X276_RS23270" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS21950</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS24955" name="Regulation of X276_RS24955">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS26905_to_X276_RS24955" qualitativeSpecies="X276_RS26905" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS24955" qualitativeSpecies="X276_RS24955" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS26905</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS06155" name="Regulation of X276_RS06155">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS06165_to_X276_RS06155" qualitativeSpecies="X276_RS06165" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS06155" qualitativeSpecies="X276_RS06155" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS06165</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS28360" name="Regulation of X276_RS28360">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS21990_to_X276_RS28360" qualitativeSpecies="X276_RS21990" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS28360" qualitativeSpecies="X276_RS28360" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS21990</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS08815" name="Regulation of X276_RS08815">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS03065_to_X276_RS08815" qualitativeSpecies="X276_RS03065" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS08815" qualitativeSpecies="X276_RS08815" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS03065</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS00235" name="Regulation of X276_RS00235">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS04450_to_X276_RS00235" qualitativeSpecies="X276_RS04450" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS00235" qualitativeSpecies="X276_RS00235" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS04450</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS27530" name="Regulation of X276_RS27530">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS19830_to_X276_RS27530" qualitativeSpecies="X276_RS19830" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS27530" qualitativeSpecies="X276_RS27530" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS19830</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS08090" name="Regulation of X276_RS08090">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS00235_to_X276_RS08090" qualitativeSpecies="X276_RS00235" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS08090" qualitativeSpecies="X276_RS08090" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS00235</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS12385" name="Regulation of X276_RS12385">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS00325_to_X276_RS12385" qualitativeSpecies="X276_RS00325" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS12385" qualitativeSpecies="X276_RS12385" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS00325</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS24960" name="Regulation of X276_RS24960">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS08140_to_X276_RS24960" qualitativeSpecies="X276_RS08140" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS24960" qualitativeSpecies="X276_RS24960" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS08140</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS11450" name="Regulation of X276_RS11450">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS07540_to_X276_RS11450" qualitativeSpecies="X276_RS07540" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS11450" qualitativeSpecies="X276_RS11450" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS07540</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21245" name="Regulation of X276_RS21245">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25970_to_X276_RS21245" qualitativeSpecies="X276_RS25970" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21245" qualitativeSpecies="X276_RS21245" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25970</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS07250" name="Regulation of X276_RS07250">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS03145_to_X276_RS07250" qualitativeSpecies="X276_RS03145" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS07250" qualitativeSpecies="X276_RS07250" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS03145</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21405" name="Regulation of X276_RS21405">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS27430_to_X276_RS21405" qualitativeSpecies="X276_RS27430" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21405" qualitativeSpecies="X276_RS21405" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS27430</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS18375" name="Regulation of X276_RS18375">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25745_to_X276_RS18375" qualitativeSpecies="X276_RS25745" transitionEffect="none" sign="negative"/>
+          <qual:input id="input_X276_RS00415_to_X276_RS18375" qualitativeSpecies="X276_RS00415" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS18375" qualitativeSpecies="X276_RS18375" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:apply>
+                <math:or/>
+                <math:apply>
+                  <math:and/>
+                  <math:apply>
+                    <math:not/>
+                    <math:ci>X276_RS25745</math:ci>
+                  </math:apply>
+                  <math:ci>X276_RS00415</math:ci>
+                </math:apply>
+                <math:ci>X276_RS25745</math:ci>
+              </math:apply>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21395" name="Regulation of X276_RS21395">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25390_to_X276_RS21395" qualitativeSpecies="X276_RS25390" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21395" qualitativeSpecies="X276_RS21395" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25390</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS27330" name="Regulation of X276_RS27330">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS04950_to_X276_RS27330" qualitativeSpecies="X276_RS04950" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS27330" qualitativeSpecies="X276_RS27330" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS04950</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS12545" name="Regulation of X276_RS12545">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS26915_to_X276_RS12545" qualitativeSpecies="X276_RS26915" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS12545" qualitativeSpecies="X276_RS12545" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS26915</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13575" name="Regulation of X276_RS13575">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13575" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13575" qualitativeSpecies="X276_RS13575" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13580" name="Regulation of X276_RS13580">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13580" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13580" qualitativeSpecies="X276_RS13580" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21515" name="Regulation of X276_RS21515">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS12030_to_X276_RS21515" qualitativeSpecies="X276_RS12030" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21515" qualitativeSpecies="X276_RS21515" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS12030</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13595" name="Regulation of X276_RS13595">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13595" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13595" qualitativeSpecies="X276_RS13595" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21355" name="Regulation of X276_RS21355">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25390_to_X276_RS21355" qualitativeSpecies="X276_RS25390" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21355" qualitativeSpecies="X276_RS21355" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25390</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21465" name="Regulation of X276_RS21465">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25390_to_X276_RS21465" qualitativeSpecies="X276_RS25390" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21465" qualitativeSpecies="X276_RS21465" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25390</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13545" name="Regulation of X276_RS13545">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13545" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13545" qualitativeSpecies="X276_RS13545" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13590" name="Regulation of X276_RS13590">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13590" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13590" qualitativeSpecies="X276_RS13590" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21290" name="Regulation of X276_RS21290">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS27430_to_X276_RS21290" qualitativeSpecies="X276_RS27430" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21290" qualitativeSpecies="X276_RS21290" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS27430</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13585" name="Regulation of X276_RS13585">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13585" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13585" qualitativeSpecies="X276_RS13585" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13520" name="Regulation of X276_RS13520">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13520" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13520" qualitativeSpecies="X276_RS13520" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21275" name="Regulation of X276_RS21275">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25390_to_X276_RS21275" qualitativeSpecies="X276_RS25390" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21275" qualitativeSpecies="X276_RS21275" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25390</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13550" name="Regulation of X276_RS13550">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13550" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13550" qualitativeSpecies="X276_RS13550" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21350" name="Regulation of X276_RS21350">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25390_to_X276_RS21350" qualitativeSpecies="X276_RS25390" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21350" qualitativeSpecies="X276_RS21350" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25390</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21345" name="Regulation of X276_RS21345">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25390_to_X276_RS21345" qualitativeSpecies="X276_RS25390" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21345" qualitativeSpecies="X276_RS21345" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25390</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13555" name="Regulation of X276_RS13555">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13555" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13555" qualitativeSpecies="X276_RS13555" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21475" name="Regulation of X276_RS21475">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25390_to_X276_RS21475" qualitativeSpecies="X276_RS25390" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21475" qualitativeSpecies="X276_RS21475" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25390</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21470" name="Regulation of X276_RS21470">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25390_to_X276_RS21470" qualitativeSpecies="X276_RS25390" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21470" qualitativeSpecies="X276_RS21470" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25390</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13560" name="Regulation of X276_RS13560">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13560" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13560" qualitativeSpecies="X276_RS13560" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13535" name="Regulation of X276_RS13535">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13535" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13535" qualitativeSpecies="X276_RS13535" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21450" name="Regulation of X276_RS21450">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25390_to_X276_RS21450" qualitativeSpecies="X276_RS25390" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21450" qualitativeSpecies="X276_RS21450" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25390</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13540" name="Regulation of X276_RS13540">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13540" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13540" qualitativeSpecies="X276_RS13540" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13530" name="Regulation of X276_RS13530">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13530" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13530" qualitativeSpecies="X276_RS13530" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13525" name="Regulation of X276_RS13525">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13525" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13525" qualitativeSpecies="X276_RS13525" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21280" name="Regulation of X276_RS21280">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25390_to_X276_RS21280" qualitativeSpecies="X276_RS25390" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21280" qualitativeSpecies="X276_RS21280" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25390</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21130" name="Regulation of X276_RS21130">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS03450_to_X276_RS21130" qualitativeSpecies="X276_RS03450" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21130" qualitativeSpecies="X276_RS21130" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS03450</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS01655" name="Regulation of X276_RS01655">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS21695_to_X276_RS01655" qualitativeSpecies="X276_RS21695" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS01655" qualitativeSpecies="X276_RS01655" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS21695</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13480" name="Regulation of X276_RS13480">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13480" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13480" qualitativeSpecies="X276_RS13480" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13515" name="Regulation of X276_RS13515">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13515" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13515" qualitativeSpecies="X276_RS13515" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13510" name="Regulation of X276_RS13510">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13510" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13510" qualitativeSpecies="X276_RS13510" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13505" name="Regulation of X276_RS13505">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13505" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13505" qualitativeSpecies="X276_RS13505" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13490" name="Regulation of X276_RS13490">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13490" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13490" qualitativeSpecies="X276_RS13490" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13485" name="Regulation of X276_RS13485">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13485" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13485" qualitativeSpecies="X276_RS13485" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13470" name="Regulation of X276_RS13470">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13470" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13470" qualitativeSpecies="X276_RS13470" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13500" name="Regulation of X276_RS13500">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13500" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13500" qualitativeSpecies="X276_RS13500" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS12360" name="Regulation of X276_RS12360">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS07540_to_X276_RS12360" qualitativeSpecies="X276_RS07540" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS12360" qualitativeSpecies="X276_RS12360" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS07540</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS25185" name="Regulation of X276_RS25185">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS27170_to_X276_RS25185" qualitativeSpecies="X276_RS27170" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS25185" qualitativeSpecies="X276_RS25185" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS27170</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS27825" name="Regulation of X276_RS27825">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS21245_to_X276_RS27825" qualitativeSpecies="X276_RS21245" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS27825" qualitativeSpecies="X276_RS27825" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS21245</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21260" name="Regulation of X276_RS21260">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25970_to_X276_RS21260" qualitativeSpecies="X276_RS25970" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21260" qualitativeSpecies="X276_RS21260" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25970</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21255" name="Regulation of X276_RS21255">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25970_to_X276_RS21255" qualitativeSpecies="X276_RS25970" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21255" qualitativeSpecies="X276_RS21255" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25970</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS21160" name="Regulation of X276_RS21160">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25970_to_X276_RS21160" qualitativeSpecies="X276_RS25970" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS21160" qualitativeSpecies="X276_RS21160" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25970</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS03755" name="Regulation of X276_RS03755">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS27870_to_X276_RS03755" qualitativeSpecies="X276_RS27870" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS03755" qualitativeSpecies="X276_RS03755" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS27870</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13215" name="Regulation of X276_RS13215">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13215" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13215" qualitativeSpecies="X276_RS13215" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13145" name="Regulation of X276_RS13145">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS07540_to_X276_RS13145" qualitativeSpecies="X276_RS07540" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13145" qualitativeSpecies="X276_RS13145" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS07540</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS06740" name="Regulation of X276_RS06740">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS06170_to_X276_RS06740" qualitativeSpecies="X276_RS06170" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS06740" qualitativeSpecies="X276_RS06740" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS06170</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13160" name="Regulation of X276_RS13160">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13160" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13160" qualitativeSpecies="X276_RS13160" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13150" name="Regulation of X276_RS13150">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13150" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13150" qualitativeSpecies="X276_RS13150" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13155" name="Regulation of X276_RS13155">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13155" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13155" qualitativeSpecies="X276_RS13155" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13640" name="Regulation of X276_RS13640">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS15475_to_X276_RS13640" qualitativeSpecies="X276_RS15475" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13640" qualitativeSpecies="X276_RS13640" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS15475</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13060" name="Regulation of X276_RS13060">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13060" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13060" qualitativeSpecies="X276_RS13060" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13120" name="Regulation of X276_RS13120">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13120" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13120" qualitativeSpecies="X276_RS13120" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS08825" name="Regulation of X276_RS08825">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS01185_to_X276_RS08825" qualitativeSpecies="X276_RS01185" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS08825" qualitativeSpecies="X276_RS08825" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS01185</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13015" name="Regulation of X276_RS13015">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS13150_to_X276_RS13015" qualitativeSpecies="X276_RS13150" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13015" qualitativeSpecies="X276_RS13015" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS13150</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13110" name="Regulation of X276_RS13110">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11755_to_X276_RS13110" qualitativeSpecies="X276_RS11755" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13110" qualitativeSpecies="X276_RS13110" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11755</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS11095" name="Regulation of X276_RS11095">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS07825_to_X276_RS11095" qualitativeSpecies="X276_RS07825" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS11095" qualitativeSpecies="X276_RS11095" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS07825</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13020" name="Regulation of X276_RS13020">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS13150_to_X276_RS13020" qualitativeSpecies="X276_RS13150" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13020" qualitativeSpecies="X276_RS13020" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS13150</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS24375" name="Regulation of X276_RS24375">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS18205_to_X276_RS24375" qualitativeSpecies="X276_RS18205" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS24375" qualitativeSpecies="X276_RS24375" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS18205</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS26075" name="Regulation of X276_RS26075">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS14910_to_X276_RS26075" qualitativeSpecies="X276_RS14910" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS26075" qualitativeSpecies="X276_RS26075" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS14910</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13010" name="Regulation of X276_RS13010">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS13150_to_X276_RS13010" qualitativeSpecies="X276_RS13150" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13010" qualitativeSpecies="X276_RS13010" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS13150</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS12980" name="Regulation of X276_RS12980">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS13150_to_X276_RS12980" qualitativeSpecies="X276_RS13150" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS12980" qualitativeSpecies="X276_RS12980" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS13150</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS00350" name="Regulation of X276_RS00350">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS00165_to_X276_RS00350" qualitativeSpecies="X276_RS00165" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS00350" qualitativeSpecies="X276_RS00350" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS00165</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS12975" name="Regulation of X276_RS12975">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS13150_to_X276_RS12975" qualitativeSpecies="X276_RS13150" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS12975" qualitativeSpecies="X276_RS12975" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS13150</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS12970" name="Regulation of X276_RS12970">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS13150_to_X276_RS12970" qualitativeSpecies="X276_RS13150" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS12970" qualitativeSpecies="X276_RS12970" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS13150</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS13005" name="Regulation of X276_RS13005">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS13150_to_X276_RS13005" qualitativeSpecies="X276_RS13150" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS13005" qualitativeSpecies="X276_RS13005" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS13150</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS12960" name="Regulation of X276_RS12960">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS13150_to_X276_RS12960" qualitativeSpecies="X276_RS13150" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS12960" qualitativeSpecies="X276_RS12960" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS13150</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS02055" name="Regulation of X276_RS02055">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS02060_to_X276_RS02055" qualitativeSpecies="X276_RS02060" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS02055" qualitativeSpecies="X276_RS02055" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS02060</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS26615" name="Regulation of X276_RS26615">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS07540_to_X276_RS26615" qualitativeSpecies="X276_RS07540" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS26615" qualitativeSpecies="X276_RS26615" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS07540</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS14910" name="Regulation of X276_RS14910">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS26075_to_X276_RS14910" qualitativeSpecies="X276_RS26075" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS14910" qualitativeSpecies="X276_RS14910" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS26075</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS12415" name="Regulation of X276_RS12415">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS07540_to_X276_RS12415" qualitativeSpecies="X276_RS07540" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS12415" qualitativeSpecies="X276_RS12415" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS07540</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS12845" name="Regulation of X276_RS12845">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11740_to_X276_RS12845" qualitativeSpecies="X276_RS11740" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS12845" qualitativeSpecies="X276_RS12845" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11740</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS15950" name="Regulation of X276_RS15950">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS03065_to_X276_RS15950" qualitativeSpecies="X276_RS03065" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS15950" qualitativeSpecies="X276_RS15950" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS03065</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS27685" name="Regulation of X276_RS27685">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS12045_to_X276_RS27685" qualitativeSpecies="X276_RS12045" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS27685" qualitativeSpecies="X276_RS27685" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS12045</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS14755" name="Regulation of X276_RS14755">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS28305_to_X276_RS14755" qualitativeSpecies="X276_RS28305" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS14755" qualitativeSpecies="X276_RS14755" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS28305</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS12770" name="Regulation of X276_RS12770">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS11740_to_X276_RS12770" qualitativeSpecies="X276_RS11740" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS12770" qualitativeSpecies="X276_RS12770" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS11740</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS06520" name="Regulation of X276_RS06520">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS06170_to_X276_RS06520" qualitativeSpecies="X276_RS06170" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS06520" qualitativeSpecies="X276_RS06520" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS06170</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition id="tr_X276_RS15500" name="Regulation of X276_RS15500">
+        <qual:listOfInputs>
+          <qual:input id="input_X276_RS25650_to_X276_RS15500" qualitativeSpecies="X276_RS25650" transitionEffect="none" sign="positive"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output id="output_X276_RS15500" qualitativeSpecies="X276_RS15500" transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm resultLevel="0"/>
+          <qual:functionTerm resultLevel="1">
+            <math:math>
+              <math:ci>X276_RS25650</math:ci>
+            </math:math>
+          </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+    </qual:listOfTransitions>
+  </model>
+</sbml>

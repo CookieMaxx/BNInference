@@ -1,0 +1,72 @@
+Boolean Network Inference Analysis Summary
+==================================================
+
+Total genes analyzed: 100
+Successful inferences: 100
+Default rules created: 0
+Success rate: 100.0%
+Total regulatory edges: 309
+Total rules generated: 300
+Average rules per gene: 3.0
+Computation time: 380.4 seconds
+Processes used: 6
+
+RULE QUALITY ANALYSIS BY TIER
+------------------------------
+High quality rules (C>=0.8, F1>=0.8): 300
+Medium quality rules (C>=0.6, F1>=0.6): 0
+Low quality rules (C<0.6 or F1<0.6): 0
+Rules meeting original threshold: 300
+Total non-trivial rules: 300
+
+EDGE DISTRIBUTION ANALYSIS
+-------------------------
+Activation edges: 294
+Inhibition edges: 15
+High quality edges: 309
+Medium quality edges: 0
+Low quality edges: 0
+DISCRETIZATION ANALYSIS
+-------------------------
+Average ON fraction: 0.463
+Genes always OFF: 0
+Genes always ON: 0
+Balanced genes (0.3-0.7): 100
+
+RECIPROCAL RELATIONSHIPS
+------------------------
+Found 8 reciprocal regulatory pairs:
+  X276_RS21405 --activation--> X276_RS27430
+  X276_RS27430 --activation--> X276_RS21405
+  Confidences: 1.000, 1.000
+
+  X276_RS21290 --activation--> X276_RS27430
+  X276_RS27430 --activation--> X276_RS21290
+  Confidences: 1.000, 1.000
+
+  X276_RS21290 --activation--> X276_RS21405
+  X276_RS21405 --activation--> X276_RS21290
+  Confidences: 1.000, 1.000
+
+  X276_RS13590 --activation--> X276_RS13595
+  X276_RS13595 --activation--> X276_RS13590
+  Confidences: 1.000, 1.000
+
+  X276_RS21450 --activation--> X276_RS21465
+  X276_RS21465 --activation--> X276_RS21450
+  Confidences: 1.000, 1.000
+
+  X276_RS14910 --activation--> X276_RS26075
+  X276_RS26075 --activation--> X276_RS14910
+  Confidences: 1.000, 1.000
+
+  X276_RS13640 --activation--> X276_RS26075
+  X276_RS26075 --activation--> X276_RS13640
+  Confidences: 1.000, 1.000
+
+  X276_RS13640 --activation--> X276_RS14910
+  X276_RS14910 --activation--> X276_RS13640
+  Confidences: 1.000, 1.000
+
+
+Example gene ON fractions:

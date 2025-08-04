@@ -1,0 +1,807 @@
+# Boolean Network Rules for Clostridium beijerinckii
+# Format: Target_Gene = Boolean_Expression
+# Success rate: 100.0%
+# Total edges: 309
+# Total rules: 300
+# Avg rules per gene: 3.0
+
+# === X276_RS21140 ===
+X276_RS21140_rule_1 = X276_RS26975
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS21140_rule_2 = X276_RS22500
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS21140_rule_3 = X276_RS26975
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+
+# === X276_RS23275 ===
+X276_RS23275_rule_1 = NOT X276_RS26915
+# Consistency: 1.000, F1: 1.000, Balance: 0.925, Tier: high
+X276_RS23275_rule_2 = NOT X276_RS09165
+# Consistency: 1.000, F1: 1.000, Balance: 0.925, Tier: high
+X276_RS23275_rule_3 = NOT X276_RS09450
+# Consistency: 1.000, F1: 1.000, Balance: 0.925, Tier: high
+
+# === X276_RS27430 ===
+X276_RS27430_rule_1 = X276_RS21405
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS27430_rule_2 = X276_RS21290
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS27430_rule_3 = X276_RS04125
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+
+# === X276_RS03340 ===
+X276_RS03340_rule_1 = X276_RS25390
+# Consistency: 0.944, F1: 0.933, Balance: 0.944, Tier: high
+X276_RS03340_rule_2 = X276_RS21350
+# Consistency: 0.944, F1: 0.933, Balance: 0.944, Tier: high
+X276_RS03340_rule_3 = X276_RS21355
+# Consistency: 0.944, F1: 0.933, Balance: 0.944, Tier: high
+
+# === X276_RS26895 ===
+X276_RS26895_rule_1 = (NOT X276_RS07445 AND NOT X276_RS09440) OR (X276_RS07445 AND NOT X276_RS01980)
+# Consistency: 1.000, F1: 1.000, Balance: 0.854, Tier: high
+X276_RS26895_rule_2 = (NOT X276_RS07445 AND NOT X276_RS09440) OR (X276_RS07445 AND NOT X276_RS01990)
+# Consistency: 1.000, F1: 1.000, Balance: 0.854, Tier: high
+X276_RS26895_rule_3 = (NOT X276_RS07445 AND NOT X276_RS20515) OR (X276_RS07445 AND NOT X276_RS01980)
+# Consistency: 1.000, F1: 1.000, Balance: 0.854, Tier: high
+
+# === X276_RS10140 ===
+X276_RS10140_rule_1 = X276_RS00025
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS10140_rule_2 = X276_RS05025
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS10140_rule_3 = X276_RS00025
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+
+# === X276_RS23270 ===
+X276_RS23270_rule_1 = X276_RS21950
+# Consistency: 0.944, F1: 0.952, Balance: 0.944, Tier: high
+X276_RS23270_rule_2 = X276_RS26455
+# Consistency: 0.944, F1: 0.952, Balance: 0.944, Tier: high
+X276_RS23270_rule_3 = X276_RS21990
+# Consistency: 0.944, F1: 0.952, Balance: 0.944, Tier: high
+
+# === X276_RS24955 ===
+X276_RS24955_rule_1 = X276_RS26905
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS24955_rule_2 = X276_RS26900
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS24955_rule_3 = X276_RS26935
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS06155 ===
+X276_RS06155_rule_1 = X276_RS06165
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS06155_rule_2 = X276_RS25925
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS06155_rule_3 = X276_RS25980
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS28360 ===
+X276_RS28360_rule_1 = X276_RS21990
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS28360_rule_2 = X276_RS25235
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS28360_rule_3 = X276_RS25220
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS08815 ===
+X276_RS08815_rule_1 = X276_RS03065
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS08815_rule_2 = X276_RS04450
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS08815_rule_3 = X276_RS08090
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS00235 ===
+X276_RS00235_rule_1 = X276_RS04450
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS00235_rule_2 = X276_RS04485
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS00235_rule_3 = X276_RS04545
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS27530 ===
+X276_RS27530_rule_1 = X276_RS19830
+# Consistency: 0.889, F1: 0.889, Balance: 1.000, Tier: high
+X276_RS27530_rule_2 = X276_RS19830
+# Consistency: 0.889, F1: 0.889, Balance: 1.000, Tier: high
+X276_RS27530_rule_3 = X276_RS19830
+# Consistency: 0.889, F1: 0.889, Balance: 1.000, Tier: high
+
+# === X276_RS08090 ===
+X276_RS08090_rule_1 = X276_RS00235
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS08090_rule_2 = X276_RS07540
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS08090_rule_3 = X276_RS08170
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS12385 ===
+X276_RS12385_rule_1 = X276_RS00325
+# Consistency: 0.944, F1: 0.933, Balance: 0.944, Tier: high
+X276_RS12385_rule_2 = X276_RS13115
+# Consistency: 0.944, F1: 0.933, Balance: 0.944, Tier: high
+X276_RS12385_rule_3 = X276_RS27595
+# Consistency: 0.944, F1: 0.933, Balance: 0.944, Tier: high
+
+# === X276_RS24960 ===
+X276_RS24960_rule_1 = X276_RS08140
+# Consistency: 0.944, F1: 0.947, Balance: 0.944, Tier: high
+X276_RS24960_rule_2 = X276_RS08140
+# Consistency: 0.944, F1: 0.947, Balance: 0.944, Tier: high
+X276_RS24960_rule_3 = X276_RS08140
+# Consistency: 0.944, F1: 0.947, Balance: 0.944, Tier: high
+
+# === X276_RS11450 ===
+X276_RS11450_rule_1 = X276_RS07540
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS11450_rule_2 = X276_RS20965
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS11450_rule_3 = X276_RS21700
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS21245 ===
+X276_RS21245_rule_1 = X276_RS25970
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21245_rule_2 = X276_RS21770
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21245_rule_3 = X276_RS25255
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS07250 ===
+X276_RS07250_rule_1 = X276_RS03145
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS07250_rule_2 = X276_RS26925
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS07250_rule_3 = X276_RS03145
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS21405 ===
+X276_RS21405_rule_1 = X276_RS27430
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS21405_rule_2 = X276_RS21290
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS21405_rule_3 = X276_RS04125
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+
+# === X276_RS18375 ===
+X276_RS18375_rule_1 = (NOT X276_RS25745 AND X276_RS00415) OR X276_RS25745
+# Consistency: 1.000, F1: 1.000, Balance: 0.963, Tier: high
+X276_RS18375_rule_2 = (NOT X276_RS25745 AND X276_RS00415) OR X276_RS25745
+# Consistency: 1.000, F1: 1.000, Balance: 0.963, Tier: high
+X276_RS18375_rule_3 = (NOT X276_RS25745 AND X276_RS00415) OR X276_RS25745
+# Consistency: 1.000, F1: 1.000, Balance: 0.963, Tier: high
+
+# === X276_RS21395 ===
+X276_RS21395_rule_1 = X276_RS25390
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21395_rule_2 = X276_RS21465
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21395_rule_3 = X276_RS21475
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS27330 ===
+X276_RS27330_rule_1 = X276_RS04950
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS27330_rule_2 = X276_RS26475
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS27330_rule_3 = X276_RS25825
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+
+# === X276_RS12545 ===
+X276_RS12545_rule_1 = X276_RS26915
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS12545_rule_2 = X276_RS09165
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS12545_rule_3 = X276_RS09450
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+
+# === X276_RS13575 ===
+X276_RS13575_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13575_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13575_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13580 ===
+X276_RS13580_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13580_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13580_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS21515 ===
+X276_RS21515_rule_1 = X276_RS12030
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21515_rule_2 = X276_RS06165
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21515_rule_3 = X276_RS06155
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS13595 ===
+X276_RS13595_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13595_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13595_rule_3 = X276_RS13590
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS21355 ===
+X276_RS21355_rule_1 = X276_RS25390
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21355_rule_2 = X276_RS21465
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21355_rule_3 = X276_RS21475
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS21465 ===
+X276_RS21465_rule_1 = X276_RS25390
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21465_rule_2 = X276_RS21450
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21465_rule_3 = X276_RS25975
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS13545 ===
+X276_RS13545_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13545_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13545_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13590 ===
+X276_RS13590_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13590_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13590_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS21290 ===
+X276_RS21290_rule_1 = X276_RS27430
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS21290_rule_2 = X276_RS21405
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS21290_rule_3 = X276_RS04125
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+
+# === X276_RS13585 ===
+X276_RS13585_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13585_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13585_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13520 ===
+X276_RS13520_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13520_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13520_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS21275 ===
+X276_RS21275_rule_1 = X276_RS25390
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21275_rule_2 = X276_RS21465
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21275_rule_3 = X276_RS21475
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS13550 ===
+X276_RS13550_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13550_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13550_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS21350 ===
+X276_RS21350_rule_1 = X276_RS25390
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21350_rule_2 = X276_RS21465
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21350_rule_3 = X276_RS21475
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS21345 ===
+X276_RS21345_rule_1 = X276_RS25390
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21345_rule_2 = X276_RS21465
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21345_rule_3 = X276_RS21475
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS13555 ===
+X276_RS13555_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13555_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13555_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS21475 ===
+X276_RS21475_rule_1 = X276_RS25390
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21475_rule_2 = X276_RS21450
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21475_rule_3 = X276_RS25975
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS21470 ===
+X276_RS21470_rule_1 = X276_RS25390
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21470_rule_2 = X276_RS21450
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21470_rule_3 = X276_RS25975
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS13560 ===
+X276_RS13560_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13560_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13560_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13535 ===
+X276_RS13535_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13535_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13535_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS21450 ===
+X276_RS21450_rule_1 = X276_RS25390
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21450_rule_2 = X276_RS21465
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21450_rule_3 = X276_RS25975
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS13540 ===
+X276_RS13540_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13540_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13540_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13530 ===
+X276_RS13530_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13530_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13530_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13525 ===
+X276_RS13525_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13525_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13525_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS21280 ===
+X276_RS21280_rule_1 = X276_RS25390
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21280_rule_2 = X276_RS21465
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21280_rule_3 = X276_RS21475
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS21130 ===
+X276_RS21130_rule_1 = X276_RS03450
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS21130_rule_2 = X276_RS25640
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS21130_rule_3 = X276_RS25135
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+
+# === X276_RS01655 ===
+X276_RS01655_rule_1 = X276_RS21695
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS01655_rule_2 = X276_RS26860
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS01655_rule_3 = X276_RS26850
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS13480 ===
+X276_RS13480_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13480_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13480_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13515 ===
+X276_RS13515_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13515_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13515_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13510 ===
+X276_RS13510_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13510_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13510_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13505 ===
+X276_RS13505_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13505_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13505_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13490 ===
+X276_RS13490_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13490_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13490_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13485 ===
+X276_RS13485_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13485_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13485_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13470 ===
+X276_RS13470_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13470_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13470_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13500 ===
+X276_RS13500_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13500_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13500_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS12360 ===
+X276_RS12360_rule_1 = X276_RS07540
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS12360_rule_2 = X276_RS00240
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS12360_rule_3 = X276_RS17070
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS25185 ===
+X276_RS25185_rule_1 = X276_RS27170
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS25185_rule_2 = X276_RS01625
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS25185_rule_3 = X276_RS27170
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS27825 ===
+X276_RS27825_rule_1 = X276_RS21245
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS27825_rule_2 = X276_RS21160
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS27825_rule_3 = X276_RS21255
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS21260 ===
+X276_RS21260_rule_1 = X276_RS25970
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21260_rule_2 = X276_RS21770
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21260_rule_3 = X276_RS25255
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS21255 ===
+X276_RS21255_rule_1 = X276_RS25970
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21255_rule_2 = X276_RS21770
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21255_rule_3 = X276_RS25255
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS21160 ===
+X276_RS21160_rule_1 = X276_RS25970
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21160_rule_2 = X276_RS21770
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS21160_rule_3 = X276_RS25255
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS03755 ===
+X276_RS03755_rule_1 = X276_RS27870
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS03755_rule_2 = X276_RS27065
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS03755_rule_3 = X276_RS06170
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+
+# === X276_RS13215 ===
+X276_RS13215_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13215_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13215_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13145 ===
+X276_RS13145_rule_1 = X276_RS07540
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS13145_rule_2 = X276_RS00240
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS13145_rule_3 = X276_RS17070
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS06740 ===
+X276_RS06740_rule_1 = X276_RS06170
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS06740_rule_2 = X276_RS06265
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS06740_rule_3 = X276_RS06780
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+
+# === X276_RS13160 ===
+X276_RS13160_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13160_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13160_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13150 ===
+X276_RS13150_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13150_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13150_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13155 ===
+X276_RS13155_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13155_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13155_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13640 ===
+X276_RS13640_rule_1 = X276_RS15475
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS13640_rule_2 = X276_RS26075
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS13640_rule_3 = X276_RS14910
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+
+# === X276_RS13060 ===
+X276_RS13060_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13060_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13060_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13120 ===
+X276_RS13120_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13120_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13120_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS08825 ===
+X276_RS08825_rule_1 = X276_RS01185
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS08825_rule_2 = X276_RS01185
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS08825_rule_3 = X276_RS01185
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS13015 ===
+X276_RS13015_rule_1 = X276_RS13150
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13015_rule_2 = X276_RS13155
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13015_rule_3 = X276_RS13160
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13110 ===
+X276_RS13110_rule_1 = X276_RS11755
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13110_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13110_rule_3 = X276_RS13595
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS11095 ===
+X276_RS11095_rule_1 = X276_RS07825
+# Consistency: 0.944, F1: 0.941, Balance: 0.944, Tier: high
+X276_RS11095_rule_2 = X276_RS02905
+# Consistency: 0.944, F1: 0.941, Balance: 0.944, Tier: high
+X276_RS11095_rule_3 = X276_RS07815
+# Consistency: 0.944, F1: 0.941, Balance: 0.944, Tier: high
+
+# === X276_RS13020 ===
+X276_RS13020_rule_1 = X276_RS13150
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13020_rule_2 = X276_RS13155
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13020_rule_3 = X276_RS13160
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS24375 ===
+X276_RS24375_rule_1 = X276_RS18205
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS24375_rule_2 = X276_RS18205
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS24375_rule_3 = X276_RS18205
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS26075 ===
+X276_RS26075_rule_1 = X276_RS14910
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS26075_rule_2 = X276_RS13640
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS26075_rule_3 = X276_RS15475
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+
+# === X276_RS13010 ===
+X276_RS13010_rule_1 = X276_RS13150
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13010_rule_2 = X276_RS13155
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13010_rule_3 = X276_RS13160
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS12980 ===
+X276_RS12980_rule_1 = X276_RS13150
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS12980_rule_2 = X276_RS13155
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS12980_rule_3 = X276_RS13160
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS00350 ===
+X276_RS00350_rule_1 = X276_RS00165
+# Consistency: 0.944, F1: 0.941, Balance: 1.000, Tier: high
+X276_RS00350_rule_2 = X276_RS00165
+# Consistency: 0.944, F1: 0.941, Balance: 1.000, Tier: high
+X276_RS00350_rule_3 = X276_RS00165
+# Consistency: 0.944, F1: 0.941, Balance: 1.000, Tier: high
+
+# === X276_RS12975 ===
+X276_RS12975_rule_1 = X276_RS13150
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS12975_rule_2 = X276_RS13155
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS12975_rule_3 = X276_RS13160
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS12970 ===
+X276_RS12970_rule_1 = X276_RS13150
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS12970_rule_2 = X276_RS13155
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS12970_rule_3 = X276_RS13160
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS13005 ===
+X276_RS13005_rule_1 = X276_RS13150
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13005_rule_2 = X276_RS13155
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS13005_rule_3 = X276_RS13160
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS12960 ===
+X276_RS12960_rule_1 = X276_RS13150
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS12960_rule_2 = X276_RS13155
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS12960_rule_3 = X276_RS13160
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS02055 ===
+X276_RS02055_rule_1 = X276_RS02060
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS02055_rule_2 = X276_RS27065
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS02055_rule_3 = X276_RS05240
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+
+# === X276_RS26615 ===
+X276_RS26615_rule_1 = X276_RS07540
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS26615_rule_2 = X276_RS20965
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS26615_rule_3 = X276_RS08090
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS14910 ===
+X276_RS14910_rule_1 = X276_RS26075
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS14910_rule_2 = X276_RS15475
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS14910_rule_3 = X276_RS13640
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+
+# === X276_RS12415 ===
+X276_RS12415_rule_1 = X276_RS07540
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS12415_rule_2 = X276_RS00240
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS12415_rule_3 = X276_RS17070
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS12845 ===
+X276_RS12845_rule_1 = X276_RS11740
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS12845_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS12845_rule_3 = X276_RS12585
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS15950 ===
+X276_RS15950_rule_1 = X276_RS03065
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS15950_rule_2 = X276_RS04450
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+X276_RS15950_rule_3 = X276_RS00235
+# Consistency: 1.000, F1: 1.000, Balance: 0.944, Tier: high
+
+# === X276_RS27685 ===
+X276_RS27685_rule_1 = X276_RS12045
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS27685_rule_2 = X276_RS12055
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS27685_rule_3 = X276_RS12515
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS14755 ===
+X276_RS14755_rule_1 = X276_RS28305
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS14755_rule_2 = X276_RS27295
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+X276_RS14755_rule_3 = X276_RS13660
+# Consistency: 1.000, F1: 1.000, Balance: 0.889, Tier: high
+
+# === X276_RS12770 ===
+X276_RS12770_rule_1 = X276_RS11740
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS12770_rule_2 = X276_RS11665
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+X276_RS12770_rule_3 = X276_RS12585
+# Consistency: 1.000, F1: 1.000, Balance: 0.833, Tier: high
+
+# === X276_RS06520 ===
+X276_RS06520_rule_1 = X276_RS06170
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS06520_rule_2 = X276_RS06265
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+X276_RS06520_rule_3 = X276_RS06785
+# Consistency: 1.000, F1: 1.000, Balance: 1.000, Tier: high
+
+# === X276_RS15500 ===
+X276_RS15500_rule_1 = X276_RS25650
+# Consistency: 0.944, F1: 0.933, Balance: 0.944, Tier: high
+X276_RS15500_rule_2 = X276_RS19565
+# Consistency: 0.944, F1: 0.933, Balance: 0.944, Tier: high
+X276_RS15500_rule_3 = X276_RS17535
+# Consistency: 0.944, F1: 0.933, Balance: 0.944, Tier: high
+

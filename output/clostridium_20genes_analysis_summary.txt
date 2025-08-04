@@ -1,0 +1,44 @@
+Boolean Network Inference Analysis Summary
+==================================================
+
+Total genes analyzed: 20
+Successful inferences: 20
+Default rules created: 0
+Success rate: 100.0%
+Total regulatory edges: 66
+Total rules generated: 60
+Average rules per gene: 3.0
+Computation time: 105.6 seconds
+Processes used: 6
+
+RULE QUALITY ANALYSIS BY TIER
+------------------------------
+High quality rules (C>=0.8, F1>=0.8): 60
+Medium quality rules (C>=0.6, F1>=0.6): 0
+Low quality rules (C<0.6 or F1<0.6): 0
+Rules meeting original threshold: 60
+Total non-trivial rules: 60
+
+EDGE DISTRIBUTION ANALYSIS
+-------------------------
+Activation edges: 54
+Inhibition edges: 12
+High quality edges: 66
+Medium quality edges: 0
+Low quality edges: 0
+DISCRETIZATION ANALYSIS
+-------------------------
+Average ON fraction: 0.463
+Genes always OFF: 0
+Genes always ON: 0
+Balanced genes (0.3-0.7): 20
+
+RECIPROCAL RELATIONSHIPS
+------------------------
+Found 1 reciprocal regulatory pairs:
+  X276_RS21405 --activation--> X276_RS27430
+  X276_RS27430 --activation--> X276_RS21405
+  Confidences: 1.000, 1.000
+
+
+Example gene ON fractions:
