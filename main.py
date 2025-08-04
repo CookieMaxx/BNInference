@@ -27,7 +27,7 @@ if __name__ == "__main__":
     #initialize the Boolean Network inference engine
     print(f"\nInitializing Boolean Network Inference...")
     bn = BooleanNetworkInference(
-        discretization_method='mean',
+        discretization_method='adaptive',
         max_regulators=4,  # allow up to 4 regulators per gene
         min_consistency=0.60,  #slightly lower for more edges
         correlation_threshold=0.05,  # lower threshold for more potential regulators
